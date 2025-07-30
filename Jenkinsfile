@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Node17'  // Make sure this is configured in Global Tools
+        nodejs 'Node17'  // Ensure this is configured in Jenkins global tools
     }
 
     stages {
@@ -22,9 +22,14 @@ pipeline {
 
         stage('Deploy to Apache') {
             steps {
-                sh 'sudo rm -rf /var/www/ReactFrontend/*'
-                sh 'sudo cp -r build/* /var/www/ReactFrontend/'
-                sh 'sudo systemctl restart apache2'
+                script {
+                    sh '''
+                        # If Jenkins user has passwordless sudo access, this will work
+                        sudo rm -rf /var/www/ReactFrontend/*
+                        sudo cp -r build/* /var/www/ReactFrontend/
+                        sudo systemctl restart apache2
+                    '''
+                }
             }
         }
     }
