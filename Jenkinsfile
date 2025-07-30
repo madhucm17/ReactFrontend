@@ -1,9 +1,8 @@
-// Jenkinsfile for React Frontend
 pipeline {
     agent any
 
     tools {
-        nodejs 'Node17'  // Ensure this is configured in Jenkins global tools
+        nodejs 'Node17'
     }
 
     stages {
@@ -24,7 +23,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                        # If Jenkins user has passwordless sudo access, this will work
+                        # Ensure jenkins has permissions or sudo access
                         sudo rm -rf /var/www/ReactFrontend/*
                         sudo cp -r build/* /var/www/ReactFrontend/
                         sudo systemctl restart apache2
