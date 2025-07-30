@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Frontend Code') {
             steps {
-                git 'https://github.com/your-username/react-frontend-repo.git'
+                git 'https://github.com/madhucm17/ReactFrontend.git'
             }
         }
 
@@ -22,8 +22,8 @@ pipeline {
 
         stage('Deploy to Apache') {
             steps {
-                sh 'sudo rm -rf /var/www/my-frontend/*'
-                sh 'sudo cp -r build/* /var/www/my-frontend/'
+                sh 'sudo rm -rf /var/www/ReactFrontend/*'
+                sh 'sudo cp -r build/* /var/www/ReactFrontend/'
                 sh 'sudo systemctl restart apache2'
             }
         }
