@@ -5,20 +5,24 @@ function About() {
     <section id="about" className="about">
       <div className="about-content">
         <div className="about-text">
-          <h2>About React-Build</h2>
+          <h2>About Zerozilla</h2>
           <p>
-            React-Build is a modern web development platform that empowers developers to create 
-            stunning, high-performance websites using React.js. Our mission is to simplify the 
-            development process while delivering exceptional user experiences.
+            Zerozilla is a leading technology company that specializes in providing comprehensive 
+            digital solutions to businesses worldwide. With years of experience in the industry, 
+            we have established ourselves as a trusted partner for companies looking to transform 
+            their digital presence.
           </p>
           <p>
-            With years of experience in web development and a passion for clean, efficient code, 
-            we've created a framework that combines the power of React with modern design principles 
-            and best practices.
+            Our team of expert developers, designers, and digital marketers work together to 
+            deliver cutting-edge solutions that drive business growth. We believe in innovation, 
+            quality, and customer satisfaction, which is why we stay updated with the latest 
+            technologies and industry trends.
           </p>
           <p>
-            Whether you're a seasoned developer or just starting your journey, React-Build provides 
-            the tools and structure you need to bring your ideas to life.
+            From custom web applications to mobile apps, cloud solutions to digital marketing 
+            strategies, Zerozilla offers end-to-end services that help businesses thrive in 
+            the digital age. Our commitment to excellence and attention to detail sets us apart 
+            in the competitive technology landscape.
           </p>
         </div>
         <div className="about-image">
@@ -32,9 +36,23 @@ function About() {
             justifyContent: 'center',
             color: 'white',
             fontSize: '2rem',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            position: 'relative',
+            overflow: 'hidden'
           }}>
-            🚀 React-Build
+            <div style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              textAlign: 'center'
+            }}>
+              <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🚀</div>
+              <div>Zerozilla</div>
+              <div style={{ fontSize: '1rem', marginTop: '0.5rem', opacity: 0.8 }}>
+                Technology Solutions
+              </div>
+            </div>
           </div>
         </div>
       </div>

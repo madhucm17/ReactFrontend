@@ -48,6 +48,7 @@ body {
   display: flex;
   list-style: none;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-links a {
@@ -59,6 +60,27 @@ body {
 
 .nav-links a:hover {
   color: #ffd700;
+}
+
+.user-info {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
 }
 
 /* Hero Section */
@@ -303,6 +325,7 @@ body {
   
   .nav-links {
     gap: 1rem;
+    flex-wrap: wrap;
   }
   
   .hero h1 {

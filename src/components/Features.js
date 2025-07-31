@@ -3,41 +3,41 @@ import React from 'react';
 function Features() {
   const features = [
     {
-      icon: '⚡',
-      title: 'Lightning Fast',
-      description: 'Built with React.js for optimal performance and smooth user experience.'
+      icon: '💻',
+      title: 'Web Development',
+      description: 'Custom web applications and websites built with modern technologies and best practices.'
     },
     {
       icon: '📱',
-      title: 'Responsive Design',
-      description: 'Looks perfect on all devices - desktop, tablet, and mobile.'
+      title: 'Mobile Development',
+      description: 'Native and cross-platform mobile applications for iOS and Android platforms.'
+    },
+    {
+      icon: '☁️',
+      title: 'Cloud Solutions',
+      description: 'Scalable cloud infrastructure and deployment solutions for your business needs.'
+    },
+    {
+      icon: '📈',
+      title: 'Digital Marketing',
+      description: 'Comprehensive digital marketing strategies to boost your online presence and growth.'
     },
     {
       icon: '🎨',
-      title: 'Modern UI',
-      description: 'Beautiful, clean design with smooth animations and transitions.'
+      title: 'UI/UX Design',
+      description: 'Beautiful, intuitive user interfaces and exceptional user experiences.'
     },
     {
       icon: '🔧',
-      title: 'Easy to Customize',
-      description: 'Well-structured code that\'s easy to modify and extend.'
-    },
-    {
-      icon: '🚀',
-      title: 'Production Ready',
-      description: 'Optimized for deployment with build tools and best practices.'
-    },
-    {
-      icon: '💻',
-      title: 'Developer Friendly',
-      description: 'Clean code structure with modern JavaScript and React patterns.'
+      title: 'Technical Support',
+      description: '24/7 technical support and maintenance services for all your digital solutions.'
     }
   ];
 
   return (
     <section id="features" className="features">
       <div className="features-content">
-        <h2 className="section-title">Why Choose React-Build?</h2>
+        <h2 className="section-title">Our Services</h2>
         <div className="features-grid">
           {features.map((feature, index) => (
             <div key={index} className="feature-card">
