@@ -140,7 +140,7 @@ function Auth({ onLogin }) {
         </div>
 
         <div className="auth-info">
-          <p>🚀 <strong>Welcome to Zerozilla Web Page and Thank You  </strong></p>
+          <p>🚀 <strong>Welcome to Zerozilla Web Page and Thank You And this is Small update from madhu C M </strong></p>
           {isSignUp && (
             <p>🔐 <strong>Security:</strong> Don't Worry Your Passwords Encrypted </p>
           )}   
